@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ForzaSled_Example' do
+  pod 'ForzaSled', :path => '../'
+
+  target 'ForzaSled_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

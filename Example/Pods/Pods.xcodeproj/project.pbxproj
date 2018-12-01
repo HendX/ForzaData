@@ -1,0 +1,986 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2029D04A0EC3F29D96ABE2761F23DA97 /* ForzaData-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9951FF4126EFD0362676E7DE25A14FCD /* ForzaData-dummy.m */; };
+		2DAA98C8614A6DED26CE8712531AE1FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B811B7AE0E054C1E1A26521285653C /* Foundation.framework */; };
+		3137B916A3F1CB49438B9423F55346EF /* Pods-ForzaData_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB8B74D275A0C666BD7E300BC1D10271 /* Pods-ForzaData_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		380346DBD2278531F717765F67D65D14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B811B7AE0E054C1E1A26521285653C /* Foundation.framework */; };
+		4695CF93784F578827E0C9CEE5509E1A /* DataDecodeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0191A20505FB0A5C1F76A48AF53A624A /* DataDecodeExtension.swift */; };
+		6190F8AF2DEBA38263F52A8B1777EE6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B811B7AE0E054C1E1A26521285653C /* Foundation.framework */; };
+		665A610121B1E9D700B52E22 /* ForzaDataRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661AB29421B1E95300278891 /* ForzaDataRelay.swift */; };
+		66830F3A21B1F6C500BCA558 /* ForzaTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66830F3921B1F6C500BCA558 /* ForzaTools.swift */; };
+		7A5F1F646734AFF22025CAEDF403BFCE /* Pods-ForzaData_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F667DA1A8F3B3C6E54E0893A1D6E178 /* Pods-ForzaData_Example-dummy.m */; };
+		7E4F0161B4D135DA3A0763619A56C2F5 /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A150BFDFB60879728DB1958A240D4383 /* CocoaAsyncSocket-dummy.m */; };
+		8480493AEC1C7AF1B5C0E0BF2F70FB44 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9509718CFCC3D81230AA7CF02478B7 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8A07A5A511DD41EA396265969F83C1BE /* Pods-ForzaData_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7863420DE6BB1DF38AA05C9E25DD6FE /* Pods-ForzaData_Tests-dummy.m */; };
+		936C6AD06F4084CEDF7C942B970AC2BA /* Pods-ForzaData_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8465F55F36BF0988AC9162C78BF4ED0 /* Pods-ForzaData_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96535D4D0E3061EAA2405D8683B94712 /* ForzaDataReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD8FA49B424822F047F8EF7D3E252D9 /* ForzaDataReceiver.swift */; };
+		A882891E5A89CADF96C2CA79606409CA /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = D82B81E88C7D98976B018DB4903B5D0C /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC7DC2A21843CD99040DCD79FF3BE91B /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 30CCCF41576100268BFA48C3EED9517C /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEE9644DA0EFCF945438E125BA4F0724 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9235AEFD042C8D96AF4B4AA61E18C420 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B1335000DA4B656319A8E97D36361DD3 /* ForzaPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D83CE64610F358D3E54AB077E7F131 /* ForzaPacket.swift */; };
+		B688B80E8B12B7F6988B29DC592DA94D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7E85CD06FB5B7EAC4FAD953117F2D2 /* Security.framework */; };
+		D01B2EBC1AB52980422F5A831BBCE3F4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18CCAEB371EC97E5B9FA432AB0D5F33 /* CFNetwork.framework */; };
+		D61CBB1608CDF5D1DCC05D7CDA3694FD /* ForzaData-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0EFD2CA5AF56BA9991949CAA204C077 /* ForzaData-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4230DB0D114C94B081018C1AC1E9972 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8C213E138128F7803201DCD578F6D0 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F442967C10CB1AE33685639D437E388A /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BA6F6CCD385509DC9FF3B1ACE3E309 /* CocoaAsyncSocket.framework */; };
+		FADDD6E97902558AD9D8F2EAA6C418AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B811B7AE0E054C1E1A26521285653C /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B9CE66D06ED4A88EC9032D2FFADD858 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0D2D2B4EE7C873431AB3502859CA60;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		C09764378ADDA72D3ADAFF7D757FAC57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2A75E607DCB05BEE5FD0192AB810957;
+			remoteInfo = "Pods-ForzaData_Example";
+		};
+		E490ACFE387FE4385AE6D4D8983EC00B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 736E279442802793EFFD0EF71DA66EAC;
+			remoteInfo = ForzaData;
+		};
+		F13D03CC014C013D68080BF2EB81799C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0D2D2B4EE7C873431AB3502859CA60;
+			remoteInfo = CocoaAsyncSocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0191A20505FB0A5C1F76A48AF53A624A /* DataDecodeExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataDecodeExtension.swift; path = ForzaData/Classes/DataDecodeExtension.swift; sourceTree = "<group>"; };
+		0469EC467755C444DC684A90770240B4 /* CocoaAsyncSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.xcconfig; sourceTree = "<group>"; };
+		073FAB3AD1DA593DD77D31D92907B1B0 /* Pods_ForzaData_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForzaData_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15FB64F6C389D6A27A64ADD0B2FEDA9D /* Pods-ForzaData_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ForzaData_Example.modulemap"; sourceTree = "<group>"; };
+		18B811B7AE0E054C1E1A26521285653C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2458F2722E11A316D085841F6661C139 /* Pods_ForzaData_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForzaData_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26446C934AC5390532FB7A431359FC7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2665796138BD10F8120D3DA568B4930F /* Pods-ForzaData_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ForzaData_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		30CCCF41576100268BFA48C3EED9517C /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		330814B3C2DDA66B814375BBD80FEBE6 /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		33C6ECDC23EE549D3609CE75C8F75695 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		379CA77CA03FACE07D476DCB208EAEFA /* Pods-ForzaData_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ForzaData_Example-resources.sh"; sourceTree = "<group>"; };
+		401E44E8CD975833BDDE1D2181A43166 /* ForzaData.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ForzaData.modulemap; sourceTree = "<group>"; };
+		47B036408ECEDE751480FD19A9902EA4 /* Pods-ForzaData_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ForzaData_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4F922B06D210D8D3E6B77C977F33B3C4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		586D4F78BA99946D752ECFDA4B0120CB /* Pods-ForzaData_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ForzaData_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5A7E85CD06FB5B7EAC4FAD953117F2D2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		5C6BD9FF9065A9B4234FF761729AA07D /* Pods-ForzaData_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ForzaData_Example-frameworks.sh"; sourceTree = "<group>"; };
+		661AB29421B1E95300278891 /* ForzaDataRelay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForzaDataRelay.swift; path = ForzaData/Classes/ForzaDataRelay.swift; sourceTree = "<group>"; };
+		66830F3921B1F6C500BCA558 /* ForzaTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForzaTools.swift; path = ForzaData/Classes/ForzaTools.swift; sourceTree = "<group>"; };
+		66BB7218525E453656046DAEBC410273 /* Pods-ForzaData_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ForzaData_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6DE8EE4A53C47583B0DFDDDF0B2DD9BF /* ForzaData-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ForzaData-prefix.pch"; sourceTree = "<group>"; };
+		788FA694632B7B573167B96FB73A0F3E /* Pods-ForzaData_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ForzaData_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7FB088165F7BEDEAC0A2A602C28F49DB /* ForzaData.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ForzaData.podspec; sourceTree = "<group>"; };
+		82CA8F9FC8DC974C8919EA94FFC9A5A3 /* Pods-ForzaData_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ForzaData_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		85D83CE64610F358D3E54AB077E7F131 /* ForzaPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForzaPacket.swift; path = ForzaData/Classes/ForzaPacket.swift; sourceTree = "<group>"; };
+		8F9509718CFCC3D81230AA7CF02478B7 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		8FD8FA49B424822F047F8EF7D3E252D9 /* ForzaDataReceiver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForzaDataReceiver.swift; path = ForzaData/Classes/ForzaDataReceiver.swift; sourceTree = "<group>"; };
+		91BA6F6CCD385509DC9FF3B1ACE3E309 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9235AEFD042C8D96AF4B4AA61E18C420 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9944AE6CF3E0534B19D681F87E999A29 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9951FF4126EFD0362676E7DE25A14FCD /* ForzaData-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ForzaData-dummy.m"; sourceTree = "<group>"; };
+		9B81BF0FE3EB9ECE5F84944901A6CA17 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F667DA1A8F3B3C6E54E0893A1D6E178 /* Pods-ForzaData_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ForzaData_Example-dummy.m"; sourceTree = "<group>"; };
+		A0EFD2CA5AF56BA9991949CAA204C077 /* ForzaData-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ForzaData-umbrella.h"; sourceTree = "<group>"; };
+		A150BFDFB60879728DB1958A240D4383 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		AE3CA60D48A701925CC198550CC0E2FA /* ForzaData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForzaData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4A19BDDC877F7CD1201123E994EC5C /* Pods-ForzaData_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ForzaData_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		AF8C213E138128F7803201DCD578F6D0 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+		B5D1C767A16F34F4361EA6331B440AC5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAC1041D3AF4CE34CB0DD780686CCE1E /* Pods-ForzaData_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ForzaData_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB8B74D275A0C666BD7E300BC1D10271 /* Pods-ForzaData_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ForzaData_Tests-umbrella.h"; sourceTree = "<group>"; };
+		D5D2C27C37A395B8C786748976A72528 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D82B81E88C7D98976B018DB4903B5D0C /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		DDB25148104099AC889274FDE24161F2 /* ForzaData.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ForzaData.xcconfig; sourceTree = "<group>"; };
+		E6C5919021AC2DC8D29CC8C89A8E20F1 /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+		E7863420DE6BB1DF38AA05C9E25DD6FE /* Pods-ForzaData_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ForzaData_Tests-dummy.m"; sourceTree = "<group>"; };
+		E8D9CC5840E429D707124FC48948B4B2 /* Pods-ForzaData_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ForzaData_Tests-resources.sh"; sourceTree = "<group>"; };
+		F18CCAEB371EC97E5B9FA432AB0D5F33 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		F8465F55F36BF0988AC9162C78BF4ED0 /* Pods-ForzaData_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ForzaData_Example-umbrella.h"; sourceTree = "<group>"; };
+		F8604B1910D204FD0A421C10983EA05D /* Pods-ForzaData_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ForzaData_Tests.modulemap"; sourceTree = "<group>"; };
+		FCB24683179DC2EC54EAEDDAC4D42C71 /* Pods-ForzaData_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ForzaData_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E8B0D9E0342955B85EAF5E162BD3C5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6190F8AF2DEBA38263F52A8B1777EE6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3CDBA0E32B627CFA3E7BE62B8D5B09B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADDD6E97902558AD9D8F2EAA6C418AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C2C126168B038B9B15BF2A4C96FDDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D01B2EBC1AB52980422F5A831BBCE3F4 /* CFNetwork.framework in Frameworks */,
+				2DAA98C8614A6DED26CE8712531AE1FC /* Foundation.framework in Frameworks */,
+				B688B80E8B12B7F6988B29DC592DA94D /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6736F1D4844FFC55B251831F534CBE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F442967C10CB1AE33685639D437E388A /* CocoaAsyncSocket.framework in Frameworks */,
+				380346DBD2278531F717765F67D65D14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FA26A34267C41502C016396D4E0ABA5 /* Pods-ForzaData_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D5D2C27C37A395B8C786748976A72528 /* Info.plist */,
+				15FB64F6C389D6A27A64ADD0B2FEDA9D /* Pods-ForzaData_Example.modulemap */,
+				2665796138BD10F8120D3DA568B4930F /* Pods-ForzaData_Example-acknowledgements.markdown */,
+				FCB24683179DC2EC54EAEDDAC4D42C71 /* Pods-ForzaData_Example-acknowledgements.plist */,
+				9F667DA1A8F3B3C6E54E0893A1D6E178 /* Pods-ForzaData_Example-dummy.m */,
+				5C6BD9FF9065A9B4234FF761729AA07D /* Pods-ForzaData_Example-frameworks.sh */,
+				379CA77CA03FACE07D476DCB208EAEFA /* Pods-ForzaData_Example-resources.sh */,
+				F8465F55F36BF0988AC9162C78BF4ED0 /* Pods-ForzaData_Example-umbrella.h */,
+				66BB7218525E453656046DAEBC410273 /* Pods-ForzaData_Example.debug.xcconfig */,
+				586D4F78BA99946D752ECFDA4B0120CB /* Pods-ForzaData_Example.release.xcconfig */,
+			);
+			name = "Pods-ForzaData_Example";
+			path = "Target Support Files/Pods-ForzaData_Example";
+			sourceTree = "<group>";
+		};
+		1ACDDE0C10E8AFD652CC31192D05983A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7FB088165F7BEDEAC0A2A602C28F49DB /* ForzaData.podspec */,
+				9944AE6CF3E0534B19D681F87E999A29 /* LICENSE */,
+				4F922B06D210D8D3E6B77C977F33B3C4 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2B933D4B764323E14C9F306E59BA9E9E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F18CCAEB371EC97E5B9FA432AB0D5F33 /* CFNetwork.framework */,
+				18B811B7AE0E054C1E1A26521285653C /* Foundation.framework */,
+				5A7E85CD06FB5B7EAC4FAD953117F2D2 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		62521B00F8A0547A9993FCA675E072DB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FA26A34267C41502C016396D4E0ABA5 /* Pods-ForzaData_Example */,
+				C09E15C85EF8AD01819357EAD1E40C37 /* Pods-ForzaData_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		79B220D81EE7B515A464695D1F330020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33C6ECDC23EE549D3609CE75C8F75695 /* CocoaAsyncSocket.framework */,
+				AE3CA60D48A701925CC198550CC0E2FA /* ForzaData.framework */,
+				073FAB3AD1DA593DD77D31D92907B1B0 /* Pods_ForzaData_Example.framework */,
+				2458F2722E11A316D085841F6661C139 /* Pods_ForzaData_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				AA927A7A8DA0F01DD423BB8870FAB0D7 /* Development Pods */,
+				E57D8BB42B7367E2EA1AB4BAF61E5D44 /* Frameworks */,
+				991819176034B11A99ECC53C250D06AD /* Pods */,
+				79B220D81EE7B515A464695D1F330020 /* Products */,
+				62521B00F8A0547A9993FCA675E072DB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B1F6858839C79F394ADEA03CCA856AE /* ForzaData */ = {
+			isa = PBXGroup;
+			children = (
+				0191A20505FB0A5C1F76A48AF53A624A /* DataDecodeExtension.swift */,
+				8FD8FA49B424822F047F8EF7D3E252D9 /* ForzaDataReceiver.swift */,
+				661AB29421B1E95300278891 /* ForzaDataRelay.swift */,
+				85D83CE64610F358D3E54AB077E7F131 /* ForzaPacket.swift */,
+				66830F3921B1F6C500BCA558 /* ForzaTools.swift */,
+				1ACDDE0C10E8AFD652CC31192D05983A /* Pod */,
+				E848628E82DCB2EDD8CC527EEA3753EC /* Support Files */,
+			);
+			name = ForzaData;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		97CDCB5A0A30A5875BD2674D78A4B922 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				D82B81E88C7D98976B018DB4903B5D0C /* GCDAsyncSocket.h */,
+				8F9509718CFCC3D81230AA7CF02478B7 /* GCDAsyncSocket.m */,
+				30CCCF41576100268BFA48C3EED9517C /* GCDAsyncUdpSocket.h */,
+				9235AEFD042C8D96AF4B4AA61E18C420 /* GCDAsyncUdpSocket.m */,
+				ABF5ACA2D50E24517E38E82BF1F34D9B /* Support Files */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		991819176034B11A99ECC53C250D06AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97CDCB5A0A30A5875BD2674D78A4B922 /* CocoaAsyncSocket */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA927A7A8DA0F01DD423BB8870FAB0D7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B1F6858839C79F394ADEA03CCA856AE /* ForzaData */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		ABF5ACA2D50E24517E38E82BF1F34D9B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				330814B3C2DDA66B814375BBD80FEBE6 /* CocoaAsyncSocket.modulemap */,
+				0469EC467755C444DC684A90770240B4 /* CocoaAsyncSocket.xcconfig */,
+				A150BFDFB60879728DB1958A240D4383 /* CocoaAsyncSocket-dummy.m */,
+				E6C5919021AC2DC8D29CC8C89A8E20F1 /* CocoaAsyncSocket-prefix.pch */,
+				AF8C213E138128F7803201DCD578F6D0 /* CocoaAsyncSocket-umbrella.h */,
+				26446C934AC5390532FB7A431359FC7A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
+			sourceTree = "<group>";
+		};
+		C09E15C85EF8AD01819357EAD1E40C37 /* Pods-ForzaData_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B5D1C767A16F34F4361EA6331B440AC5 /* Info.plist */,
+				F8604B1910D204FD0A421C10983EA05D /* Pods-ForzaData_Tests.modulemap */,
+				47B036408ECEDE751480FD19A9902EA4 /* Pods-ForzaData_Tests-acknowledgements.markdown */,
+				82CA8F9FC8DC974C8919EA94FFC9A5A3 /* Pods-ForzaData_Tests-acknowledgements.plist */,
+				E7863420DE6BB1DF38AA05C9E25DD6FE /* Pods-ForzaData_Tests-dummy.m */,
+				AF4A19BDDC877F7CD1201123E994EC5C /* Pods-ForzaData_Tests-frameworks.sh */,
+				E8D9CC5840E429D707124FC48948B4B2 /* Pods-ForzaData_Tests-resources.sh */,
+				CB8B74D275A0C666BD7E300BC1D10271 /* Pods-ForzaData_Tests-umbrella.h */,
+				CAC1041D3AF4CE34CB0DD780686CCE1E /* Pods-ForzaData_Tests.debug.xcconfig */,
+				788FA694632B7B573167B96FB73A0F3E /* Pods-ForzaData_Tests.release.xcconfig */,
+			);
+			name = "Pods-ForzaData_Tests";
+			path = "Target Support Files/Pods-ForzaData_Tests";
+			sourceTree = "<group>";
+		};
+		E57D8BB42B7367E2EA1AB4BAF61E5D44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91BA6F6CCD385509DC9FF3B1ACE3E309 /* CocoaAsyncSocket.framework */,
+				2B933D4B764323E14C9F306E59BA9E9E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E848628E82DCB2EDD8CC527EEA3753EC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				401E44E8CD975833BDDE1D2181A43166 /* ForzaData.modulemap */,
+				DDB25148104099AC889274FDE24161F2 /* ForzaData.xcconfig */,
+				9951FF4126EFD0362676E7DE25A14FCD /* ForzaData-dummy.m */,
+				6DE8EE4A53C47583B0DFDDDF0B2DD9BF /* ForzaData-prefix.pch */,
+				A0EFD2CA5AF56BA9991949CAA204C077 /* ForzaData-umbrella.h */,
+				9B81BF0FE3EB9ECE5F84944901A6CA17 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ForzaData";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		066131069354C4CC132CAB645145E8F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4230DB0D114C94B081018C1AC1E9972 /* CocoaAsyncSocket-umbrella.h in Headers */,
+				A882891E5A89CADF96C2CA79606409CA /* GCDAsyncSocket.h in Headers */,
+				AC7DC2A21843CD99040DCD79FF3BE91B /* GCDAsyncUdpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CB273738BFE8FF8A7D4D9CBE7EEA0AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3137B916A3F1CB49438B9423F55346EF /* Pods-ForzaData_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F0A57C09796F362602B28B105AFF06 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61CBB1608CDF5D1DCC05D7CDA3694FD /* ForzaData-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D7EA8C8E5FFCED652916018A48D2FA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936C6AD06F4084CEDF7C942B970AC2BA /* Pods-ForzaData_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5E24F0612AEAE322A125D6F01C9E33D8 /* Pods-ForzaData_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67BEF0A6018DE34C6A3729DE7E733C1D /* Build configuration list for PBXNativeTarget "Pods-ForzaData_Tests" */;
+			buildPhases = (
+				150897DF47407450D025775BF38CDED7 /* Sources */,
+				1E8B0D9E0342955B85EAF5E162BD3C5F /* Frameworks */,
+				4CB273738BFE8FF8A7D4D9CBE7EEA0AD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A66F4805AF28754A8DBB8CF9F7B3734E /* PBXTargetDependency */,
+			);
+			name = "Pods-ForzaData_Tests";
+			productName = "Pods-ForzaData_Tests";
+			productReference = 2458F2722E11A316D085841F6661C139 /* Pods_ForzaData_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		736E279442802793EFFD0EF71DA66EAC /* ForzaData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4353923B28A39520E5EFB8FA93EDCADA /* Build configuration list for PBXNativeTarget "ForzaData" */;
+			buildPhases = (
+				670C8C3E80406AFDE4FB8E9940A6CC15 /* Sources */,
+				D6736F1D4844FFC55B251831F534CBE9 /* Frameworks */,
+				80F0A57C09796F362602B28B105AFF06 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADD950471B45F71749335C5C6E86D333 /* PBXTargetDependency */,
+			);
+			name = ForzaData;
+			productName = ForzaData;
+			productReference = AE3CA60D48A701925CC198550CC0E2FA /* ForzaData.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC0D2D2B4EE7C873431AB3502859CA60 /* CocoaAsyncSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2A03B912F777B2BFB05E7B9E903B15F /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
+			buildPhases = (
+				FD452A203117FF8DFA26B0711D439093 /* Sources */,
+				D1C2C126168B038B9B15BF2A4C96FDDC /* Frameworks */,
+				066131069354C4CC132CAB645145E8F7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaAsyncSocket;
+			productName = CocoaAsyncSocket;
+			productReference = 33C6ECDC23EE549D3609CE75C8F75695 /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F2A75E607DCB05BEE5FD0192AB810957 /* Pods-ForzaData_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F693C3C5EA1F09243438081BBBBF81C0 /* Build configuration list for PBXNativeTarget "Pods-ForzaData_Example" */;
+			buildPhases = (
+				303AFC3A8767DDBF028291C6E953C643 /* Sources */,
+				B3CDBA0E32B627CFA3E7BE62B8D5B09B /* Frameworks */,
+				8D7EA8C8E5FFCED652916018A48D2FA0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				066EE4020777D39438B0366DBB6CB11C /* PBXTargetDependency */,
+				6070DE36AAFD1456FA0A68671D21E3A8 /* PBXTargetDependency */,
+			);
+			name = "Pods-ForzaData_Example";
+			productName = "Pods-ForzaData_Example";
+			productReference = 073FAB3AD1DA593DD77D31D92907B1B0 /* Pods_ForzaData_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					AC0D2D2B4EE7C873431AB3502859CA60 = {
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 79B220D81EE7B515A464695D1F330020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC0D2D2B4EE7C873431AB3502859CA60 /* CocoaAsyncSocket */,
+				736E279442802793EFFD0EF71DA66EAC /* ForzaData */,
+				F2A75E607DCB05BEE5FD0192AB810957 /* Pods-ForzaData_Example */,
+				5E24F0612AEAE322A125D6F01C9E33D8 /* Pods-ForzaData_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		150897DF47407450D025775BF38CDED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A07A5A511DD41EA396265969F83C1BE /* Pods-ForzaData_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303AFC3A8767DDBF028291C6E953C643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A5F1F646734AFF22025CAEDF403BFCE /* Pods-ForzaData_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		670C8C3E80406AFDE4FB8E9940A6CC15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4695CF93784F578827E0C9CEE5509E1A /* DataDecodeExtension.swift in Sources */,
+				96535D4D0E3061EAA2405D8683B94712 /* ForzaDataReceiver.swift in Sources */,
+				B1335000DA4B656319A8E97D36361DD3 /* ForzaPacket.swift in Sources */,
+				665A610121B1E9D700B52E22 /* ForzaDataRelay.swift in Sources */,
+				66830F3A21B1F6C500BCA558 /* ForzaTools.swift in Sources */,
+				2029D04A0EC3F29D96ABE2761F23DA97 /* ForzaData-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD452A203117FF8DFA26B0711D439093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4F0161B4D135DA3A0763619A56C2F5 /* CocoaAsyncSocket-dummy.m in Sources */,
+				8480493AEC1C7AF1B5C0E0BF2F70FB44 /* GCDAsyncSocket.m in Sources */,
+				AEE9644DA0EFCF945438E125BA4F0724 /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		066EE4020777D39438B0366DBB6CB11C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = AC0D2D2B4EE7C873431AB3502859CA60 /* CocoaAsyncSocket */;
+			targetProxy = 2B9CE66D06ED4A88EC9032D2FFADD858 /* PBXContainerItemProxy */;
+		};
+		6070DE36AAFD1456FA0A68671D21E3A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ForzaData;
+			target = 736E279442802793EFFD0EF71DA66EAC /* ForzaData */;
+			targetProxy = E490ACFE387FE4385AE6D4D8983EC00B /* PBXContainerItemProxy */;
+		};
+		A66F4805AF28754A8DBB8CF9F7B3734E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ForzaData_Example";
+			target = F2A75E607DCB05BEE5FD0192AB810957 /* Pods-ForzaData_Example */;
+			targetProxy = C09764378ADDA72D3ADAFF7D757FAC57 /* PBXContainerItemProxy */;
+		};
+		ADD950471B45F71749335C5C6E86D333 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = AC0D2D2B4EE7C873431AB3502859CA60 /* CocoaAsyncSocket */;
+			targetProxy = F13D03CC014C013D68080BF2EB81799C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E5AB9C86EBD90C6E418193E711A30B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 788FA694632B7B573167B96FB73A0F3E /* Pods-ForzaData_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ForzaData_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ForzaData_Tests/Pods-ForzaData_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5EE3C7A4EA658F7E71519B0CD67CDAED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAC1041D3AF4CE34CB0DD780686CCE1E /* Pods-ForzaData_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ForzaData_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ForzaData_Tests/Pods-ForzaData_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C75F49401889D1BF9355A577AC1877C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDB25148104099AC889274FDE24161F2 /* ForzaData.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ForzaData/ForzaData-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ForzaData/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ForzaData/ForzaData.modulemap";
+				PRODUCT_MODULE_NAME = ForzaData;
+				PRODUCT_NAME = ForzaData;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7617C675E680645FE9100D6ED19664E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0469EC467755C444DC684A90770240B4 /* CocoaAsyncSocket.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AF96A1F8FFB1CEEA0302F36375E5D3C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66BB7218525E453656046DAEBC410273 /* Pods-ForzaData_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ForzaData_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ForzaData_Example/Pods-ForzaData_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CD3BF0F88B6B0B2BA0AE35E2FD56555E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 586D4F78BA99946D752ECFDA4B0120CB /* Pods-ForzaData_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ForzaData_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ForzaData_Example/Pods-ForzaData_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EDBB8A444E15ACA7CBC1A3BA244B3FFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0469EC467755C444DC684A90770240B4 /* CocoaAsyncSocket.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FEE611AC828AE6B50E49AA70BB1E5085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDB25148104099AC889274FDE24161F2 /* ForzaData.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ForzaData/ForzaData-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ForzaData/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ForzaData/ForzaData.modulemap";
+				PRODUCT_MODULE_NAME = ForzaData;
+				PRODUCT_NAME = ForzaData;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4353923B28A39520E5EFB8FA93EDCADA /* Build configuration list for PBXNativeTarget "ForzaData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEE611AC828AE6B50E49AA70BB1E5085 /* Debug */,
+				6C75F49401889D1BF9355A577AC1877C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67BEF0A6018DE34C6A3729DE7E733C1D /* Build configuration list for PBXNativeTarget "Pods-ForzaData_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EE3C7A4EA658F7E71519B0CD67CDAED /* Debug */,
+				1E5AB9C86EBD90C6E418193E711A30B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2A03B912F777B2BFB05E7B9E903B15F /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7617C675E680645FE9100D6ED19664E7 /* Debug */,
+				EDBB8A444E15ACA7CBC1A3BA244B3FFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F693C3C5EA1F09243438081BBBBF81C0 /* Build configuration list for PBXNativeTarget "Pods-ForzaData_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF96A1F8FFB1CEEA0302F36375E5D3C2 /* Debug */,
+				CD3BF0F88B6B0B2BA0AE35E2FD56555E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

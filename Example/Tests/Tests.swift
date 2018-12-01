@@ -1,5 +1,5 @@
 import XCTest
-import ForzaSled
+import ForzaData
 
 class Tests: XCTestCase {
     

@@ -1,0 +1,23 @@
+PODS:
+  - CocoaAsyncSocket (7.6.3)
+  - ForzaSled (0.1.0):
+    - CocoaAsyncSocket (~> 7.6.3)
+
+DEPENDENCIES:
+  - ForzaSled (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaAsyncSocket
+
+EXTERNAL SOURCES:
+  ForzaSled:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  ForzaSled: 5675126dc650e3e9c17357d4b5e7c8836b790baf
+
+PODFILE CHECKSUM: 32b4c2be60019f2cb1027f438c0e903277b80b3e
+
+COCOAPODS: 1.5.3

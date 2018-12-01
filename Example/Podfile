@@ -1,9 +1,9 @@
 use_frameworks!
 
-target 'ForzaSled_Example' do
-  pod 'ForzaSled', :path => '../'
+target 'ForzaData_Example' do
+  pod 'ForzaData', :path => '../'
 
-  target 'ForzaSled_Tests' do
+  target 'ForzaData_Tests' do
     inherit! :search_paths
 
     

@@ -29,7 +29,8 @@ class RelayViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(RelayViewController.doneTapped(_:)))
         
         let receiver = ForzaDataReceiver(port: self.relayPort)
-        self.relay = ForzaDataRelay(receiver: receiver, destinationIpAddress: self.destinationIpAddress, destinationPort: self.destinationPort)
+        let sender = ForzaDataSender(destinationIpAddress: self.destinationIpAddress, destinationPort: self.destinationPort)
+        self.relay = ForzaDataRelay(receiver: receiver, sender: sender)
         self.relay.delegate = self
         
         do {

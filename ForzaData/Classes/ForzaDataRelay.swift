@@ -13,48 +13,29 @@ public protocol ForzaDataRelayProtocol: class {
 
 public class ForzaDataRelay: NSObject {
 
-    private var socket: GCDAsyncUdpSocket?
-
     private let receiver: ForzaDataReceiver
+    private let sender: ForzaDataSender
 
-    public let destinationIpAddress: String
-    public let destinationPort: UInt16
-    
     public weak var delegate: ForzaDataRelayProtocol?
 
-    public init(receiver: ForzaDataReceiver, destinationIpAddress: String, destinationPort: UInt16) {
+    public init(receiver: ForzaDataReceiver, sender: ForzaDataSender) {
         self.receiver = receiver
-        
-        // TODO: Represent this as sockaddr as this will slow things down
-        self.destinationIpAddress = destinationIpAddress
-        self.destinationPort = destinationPort
+        self.sender = sender
     }
     
     public func startRelay() throws {
         
         self.receiver.rawPacketHandler = { data in
-            self.socket?.send(
-                data,
-                toHost: self.destinationIpAddress,
-                port: self.destinationPort,
-                withTimeout: -1,
-                tag: 0
-            )
-            
+            self.sender.send(data: data)
             self.delegate?.relayDidForwardPacket()
         }
         
-        self.socket = GCDAsyncUdpSocket(delegate: self, delegateQueue: nil)
-
         try self.receiver.startListening()
+        self.sender.start()
     }
     
     public func stopRelay() throws {
-        self.socket?.closeAfterSending()
+        self.sender.stop()
         try self.receiver.stopListening()
     }
-}
-
-extension ForzaDataRelay: GCDAsyncUdpSocketDelegate {
-    
 }

@@ -19,6 +19,8 @@
 		66830F3321B1F5AC00BCA558 /* RelaySetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66830F3221B1F5AC00BCA558 /* RelaySetupViewController.swift */; };
 		66830F3521B1F5F000BCA558 /* HostTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66830F3421B1F5F000BCA558 /* HostTools.swift */; };
 		66830F3C21B1FAEF00BCA558 /* RelayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66830F3B21B1FAEF00BCA558 /* RelayViewController.swift */; };
+		66830F3E21B24ECE00BCA558 /* GeneratorSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66830F3D21B24ECE00BCA558 /* GeneratorSetupViewController.swift */; };
+		66830F4021B24EDC00BCA558 /* GeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66830F3F21B24EDC00BCA558 /* GeneratorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		66830F3221B1F5AC00BCA558 /* RelaySetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaySetupViewController.swift; sourceTree = "<group>"; };
 		66830F3421B1F5F000BCA558 /* HostTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostTools.swift; sourceTree = "<group>"; };
 		66830F3B21B1FAEF00BCA558 /* RelayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelayViewController.swift; sourceTree = "<group>"; };
+		66830F3D21B24ECE00BCA558 /* GeneratorSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorSetupViewController.swift; sourceTree = "<group>"; };
+		66830F3F21B24EDC00BCA558 /* GeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorViewController.swift; sourceTree = "<group>"; };
 		75EA98F31685296D27E7C4A4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		77DF8721199BF511F70627CA /* ForzaData.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ForzaData.podspec; path = ../ForzaData.podspec; sourceTree = "<group>"; };
 		C16837465BE3A712C73FA806 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				660BE4F821B013590068EE30 /* HudViewController.swift */,
 				66830F3221B1F5AC00BCA558 /* RelaySetupViewController.swift */,
 				66830F3B21B1FAEF00BCA558 /* RelayViewController.swift */,
+				66830F3D21B24ECE00BCA558 /* GeneratorSetupViewController.swift */,
+				66830F3F21B24EDC00BCA558 /* GeneratorViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -339,10 +345,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				66830F3C21B1FAEF00BCA558 /* RelayViewController.swift in Sources */,
+				66830F3E21B24ECE00BCA558 /* GeneratorSetupViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* HudSetupViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				66830F3321B1F5AC00BCA558 /* RelaySetupViewController.swift in Sources */,
 				660BE4F921B013590068EE30 /* HudViewController.swift in Sources */,
+				66830F4021B24EDC00BCA558 /* GeneratorViewController.swift in Sources */,
 				66830F3521B1F5F000BCA558 /* HostTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

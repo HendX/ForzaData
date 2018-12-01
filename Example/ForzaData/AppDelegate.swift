@@ -21,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             HudSetupViewController.hudPortKey: "8888",
             RelaySetupViewController.relayLocalPortKey: "8888",
             RelaySetupViewController.relayDestinationIpAddressKey: "192.168.0.1",
-            RelaySetupViewController.relayDestinationPortKey: "8888"
+            RelaySetupViewController.relayDestinationPortKey: "8888",
+            GeneratorSetupViewController.generatorDestinationIpAddressKey: "192.168.0.1",
+            GeneratorSetupViewController.generatorDestinationPortKey: "8888"
         ])
         
         return true

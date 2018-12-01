@@ -166,11 +166,21 @@ extension ForzaPacket {
 extension ForzaPacket {
     public struct ForzaSledPacket {
         public let v0: ForzaPacket.RawPacket.V0Packet
+        
+        var toData: Data {
+            return Data.encode(self)
+        }
     }
 
     public struct ForzaDashPacket {
         public let v0: ForzaPacket.RawPacket.V0Packet
         public let v1: ForzaPacket.RawPacket.V1Packet
+        
+        var toData: Data {
+            return Data.encode(self)
+//            var mSelf = self
+//            return Data(bytes: &mSelf, count: MemoryLayout<ForzaDashPacket>.size.self)
+        }
     }
 }
 

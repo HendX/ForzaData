@@ -1,5 +1,5 @@
 //
-//  DataDecodeExtension.swift
+//  DataExtension.swift
 //  ForzaData
 //
 //  Created by Quentin Zervaas on 29/11/18.
@@ -20,4 +20,13 @@ extension Data {
         
         return pointer.move()
     }
+    
+    static func encode<T>(_ object: T) -> Data {
+        
+        var object = object
+        
+        return Data(bytes: &object, count: MemoryLayout<T>.size.self)
+    }
 }
+
+

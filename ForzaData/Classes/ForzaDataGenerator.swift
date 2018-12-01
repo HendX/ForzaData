@@ -15,9 +15,11 @@ public class ForzaDataGenerator {
     private var startDate: Date!
     
     private var paused = false
+    
+    let packetsPerSecond: Int
 
-    public init() {
-        
+    public init(packetsPerSecond: Int) {
+        self.packetsPerSecond = packetsPerSecond
     }
     
     public func startGeneratingDash(paused: Bool) {
@@ -25,8 +27,10 @@ public class ForzaDataGenerator {
         self.paused = paused
         self.startDate = Date()
         
+        let interval: TimeInterval = 1 / Double(packetsPerSecond)
+        
         self.timer?.invalidate()
-        self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(ForzaDataGenerator.timerTriggered(_:)), userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(ForzaDataGenerator.timerTriggered(_:)), userInfo: nil, repeats: true)
     }
     
     public func pauseRace() {

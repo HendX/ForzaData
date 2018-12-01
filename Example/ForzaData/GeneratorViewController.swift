@@ -30,7 +30,7 @@ class GeneratorViewController: UIViewController {
 
         self.sender = ForzaDataSender(destinationIpAddress: self.generatorIpAddress, destinationPort: self.generatorPort)
 
-        self.generator = ForzaDataGenerator()
+        self.generator = ForzaDataGenerator(packetsPerSecond: 10)
         self.generator.packetGeneratedCallack = { packet in
             self.sender.send(packet: packet)
             DispatchQueue.main.async {
